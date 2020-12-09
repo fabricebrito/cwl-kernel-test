@@ -1,1 +1,7 @@
-a
+#!/usr/bin/env bash
+
+git clone https://github.com/giannisdoukas/CWLJNIKernel.git
+cd CWLJNIKernel/
+python setup.py install
+
+cp -r `find /srv -name  cwlkernel` /srv/conda/envs/notebook/share/jupyter/kernels/
